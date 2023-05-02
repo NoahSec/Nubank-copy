@@ -5,22 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='login.css'>
-    <link rel="shortcut icon" href="/icones/duckicon.png" type="image/x-icon">
-    <title>Duck Library</title>
+    <link rel="shortcut icon" href='/icones/nubank.png' type="image/x-icon">
+    <title>Nubank</title>
 </head>
 <body>
 <div class="conteiner-dad">
   <div class="conteiner-son">
-    <img src='/icones/duck-footprints-svgrepo-com.svg'>
-    <h1>Duck Library</h1>
+    <h1>Peça sua conta e cartão de crédito do Nubank</h1>
     <form>
-        <input type="text" name="username" id="username" placeholder="Usuário">
-        <input type="password" name='password' id="password" placeholder="Senha">
-        <input type="submit" value="Entrar"> 
+        <input required type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+        <input type="submit" value="Continuar">
+        <img id='seta-submit' src='/icones/rightseta.svg'> 
     </form>
    </div>
   </div>
-</div>
+ <div class="conteiner-nav">
+    <header>
+      <img src="/icones/iconnubank.png">
+      <nav>
+        <ul>
+          <li id="ponto-1"><a href="#">Página Inicial</a></li>
+          <li><a href="#">Para você </a></li>
+          <img id="seta-1" src="/icones/chev.svg">
+          <li><a href="#">Para seu negócio</a></li>
+          <img id="seta-2" src="/icones/chev.svg">
+          <li><a href="#">O Nubank</a></li>
+          <img id="seta-3" src="/icones/chev.svg">
+          <li><a href="#">Perguntas</a></li>
+          <img id="seta-4" src="/icones/chev.svg">
+          <li id="login"><a href="#">Login ➜]</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </body>
 <script src='login.js'></script>   
 </html>
