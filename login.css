@@ -2,6 +2,10 @@
     font-family: 'agenor';
     src: url(/fonts/AgenorNeue-Regular.otf);
 }
+@font-face {
+  font-family: 'grafic';
+  src: url(/fonts/GraphikMedium.otf);
+}
 body{
     display:flex;
     background-image: url(/background/nubank-backgroun2.webp);
@@ -27,16 +31,36 @@ body{
     background-color: #fff;
     border-radius: 1rem;
     padding: 1.5rem;
-    text-align: center;
-    font-family: 'agenor';
 }
-
 
 h1{
     color:#252424;
     text-align: left;
     margin-left: -1px;
     font-size: 22px;
+}
+  .conteiner-text{
+  position: absolute;
+  top: 52%;
+  left: 25%;
+  transform: translate(-50%, -50%);/*trás ao centro*/
+  width: 40%;
+  text-align: left;
+  font-family: 'grafic';
+}
+
+.text-left {
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  max-width: 97%;
+}
+
+.h3-text{
+  margin-top: -20px;
+  font-size: 1.5rem;
+  letter-spacing: -0.01rem;
 }
 
 form{
@@ -57,7 +81,6 @@ input[type='text']{
 }
 input[type='text']:hover{
      border-bottom: 2px solid #7d4ff1;
-
 }
 input[type='submit']{
     background-color: rgb(130, 10, 209);
@@ -76,11 +99,9 @@ input[type='submit']{
     border: none;
 }
 
-
 ::placeholder{
     text-align:left;
-    font-size: 15px;
-    
+    font-size: 15px;  
 }
 
 header {
@@ -114,14 +135,12 @@ header {
     padding: 14px 16px; /* adiciona preenchimento ao redor do texto */
     text-decoration: none; /* remove o sublinhado do link */
   }
-  
-  
+   
   #login a{
     margin-left: 460px;
     color: rgb(121, 5, 156);
     position: fixed;
     background-repeat: no-repeat;
-    
   }
   
   img{
@@ -162,13 +181,8 @@ header {
     width: 15px;
     height: 15px;
   }
-  #seta-4{
-    margin-top: 17px;
-    margin-left: -12px;
-    width: 15px;
-    height: 15px;
-  }
   #seta-submit{
+    position: fixed;
     width: 20px;
     height: 20px;
     margin-top: 60px;
